@@ -7,12 +7,12 @@ I am a third-year student at the **University of Belgrade, School of Electrical 
 
 ---
 
-## 🧑‍💻 Highlighted Projects
+## 🧑‍💻 Featured Projects
 
 ### 📂 **C++ - 👉 <a href="https://github.com/matejabogdanovic/FAT-File-System-Simulation">FAT File System Implemented on a .txt File</a>**
 
 📅 **Year:** _in development_\
-A simple **FAT file system** implemented using a plain text file, encapsulated in a class that simulates a disk. The system supports basic **read** and **write** operations to specific disk blocks, mimicking real disk interface.
+A simple **FAT file system** implemented using a plain text file, encapsulated in a class that simulates a disk. Hard disk class supports basic **read** and **write** operations to specific disk blocks, mimicking real disk interface.
 
 ### 🔧 **C/C++/ASM - 👉 <a href="https://github.com/matejabogdanovic/University/tree/main/Year2/Semester4/OS1/riscv-simple-kernel">Simple Risc-V Kernel</a>**
 
@@ -25,17 +25,3 @@ A simple RISC-V kernel that supports:
 - Preemption
 
 The project includes **memory management**, **threads**, **semaphores**, and an **I/O system**.
-
----
-
-## 🎓 Education
-
-**📚 University of Belgrade, School of Electrical Engineering**  
-_2022–(2026)_ \
-Bachelor's Degree in Computer Engineering and Informatics
-
-**🏫 Electrical Engineering School "Nikola Tesla" – Belgrade**  
-_2018–2022_\
-Network Administrator
-
----
