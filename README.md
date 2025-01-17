@@ -11,7 +11,7 @@ I am a third-year student at the **University of Belgrade, School of Electrical 
 
 ### 📂 **C++ - 👉 <a href="https://github.com/matejabogdanovic/FAT-File-System-Simulation">FAT File System Implemented on a .txt File</a>**
 
-📅 **Year:** _in development_\
+📅 **Year:** 2025\
 A simple **FAT file system** implemented using a plain text file, encapsulated in a class that simulates a disk. Hard disk class supports basic **read** and **write** operations to specific disk blocks, mimicking real disk interface.
 
 ### 🔧 **C/C++/ASM - 👉 <a href="https://github.com/matejabogdanovic/University/tree/main/Year2/Semester4/OS1/riscv-simple-kernel">Simple Risc-V Kernel</a>**
