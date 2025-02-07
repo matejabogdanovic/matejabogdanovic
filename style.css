@@ -1,0 +1,159 @@
+:root {
+  --clr-accent: #EA5136;
+  --clr-dark: #14181B;
+  --clr-light: #D9D9D9;
+  --clr-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+
+  color: var(--clr);
+  text-decoration: none;
+}
+
+section[class^="bg-"] {
+  background-color: var(--bg-clr);
+  color: var(--clr);
+}
+
+section[class^="bg-"] .title {
+  color: var(--title);
+}
+
+section[class^="bg-"] .title--accent {
+  color: var(--title-accent);
+}
+
+/* utility */
+
+.bg-dark {
+  --bg-clr: var(--clr-dark);
+  --clr: var(--clr-light);
+  --title: var(--clr-light);
+  --title-accent: var(--clr-accent);
+}
+
+.bg-light {
+  --bg-clr: var(--clr-light);
+  --clr: var(--clr-dark);
+  --title: var(--clr-dark);
+  --title-accent: var(--clr-accent);
+}
+
+.bg-accent {
+  --bg-clr: var(--clr-accent);
+  --clr: var(--clr-light);
+  --title: var(--clr-dark);
+  --title-accent: var(--clr-dark);
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger+label {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+}
+
+#hamburger:checked+label+.nav-list {
+  display: none;
+}
+
+/* */
+.primary-nav {
+  white-space: nowrap;
+}
+
+
+.nav-list {
+  margin: 0;
+}
+
+.nav-list-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.nav-list-item a:not([class]):hover {
+  color: var(--clr-white);
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn--contact-me {
+  color: var(--clr-accent);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+@media (min-width: 1000px) {
+  #hamburger+label {
+    display: none;
+  }
+
+  .primary-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  }
+
+  #hamburger:checked+label+.nav-list {
+    display: flex;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .btn--contact-me {
+    position: absolute;
+    right: 0;
+  }
+}
