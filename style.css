@@ -87,14 +87,22 @@ h2 {
   --title-accent: var(--clr-dark);
 }
 
-.clr-accent {
-  color: var(--clr-accent);
-}
-
 .row {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.hover-light:hover {
+  background-color: var(--clr-light);
+  --clr: var(--clr-accent);
+  transition: 0.5s;
+}
+
+.hover-accent:hover {
+  background-color: var(--clr-accent);
+  --clr: var(--clr-dark);
+  transition: 0.5s;
 }
 
 @media (min-width: 1000px) {
@@ -144,6 +152,11 @@ h2 {
 
 .nav-list-item {
   text-align: center;
+
+}
+
+.nav-list a {
+  display: inline-block;
   padding: 2rem;
 }
 
