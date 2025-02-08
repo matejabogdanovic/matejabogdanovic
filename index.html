@@ -5,29 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <section class="hero">
-
+  <section class=" hero bg-dark">
+    <div class="container row center">
+      <div class="content col">
+        <h2>Hello!</h2>
+        <h1>I am <span class="clr-accent">Mateja</span>.</h1>
+      </div>
+      <img class="col" src="img/hero_img.png" alt="Hero Image">
+    </div>
   </section>
 
-  <section class="bg-dark">
+  <section class="navigation bg-dark">
     <nav class="primary-nav container">
       <input type="checkbox" name="hamburger" id="hamburger" checked>
       <label for="hamburger">X</label>
       <ul class="nav-list">
         <li class="nav-list-item"><a href="#">Hello</a></li>
-        <li class="nav-list-item"><a href="#">About Me</a></li>
-        <li class="nav-list-item"><a href="#">Education</a></li>
+        <li class="nav-list-item bg-light"><a href="#" class="clr-title-accent">About Me</a></li>
+        <li class="nav-list-item bg-accent"><a href="#" class="clr-title">Education</a></li>
         <li class="nav-list-item"><a href="#">Projects</a></li>
         <li class="nav-list-item"><a href="#">Other</a></li>
         <li class="nav-list-item"> <a class="btn btn--contact-me " href="#">Contact Me</a></li>
       </ul>
-
-
 
     </nav>
   </section>
