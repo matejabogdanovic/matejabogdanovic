@@ -11,6 +11,7 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
+  background-color: var(--clr-dark);
 }
 
 *,
@@ -96,16 +97,16 @@ h2 {
 .hover-light:hover {
   background-color: var(--clr-light);
   --clr: var(--clr-accent);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .hover-accent:hover {
   background-color: var(--clr-accent);
   --clr: var(--clr-dark);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .row {
     flex-direction: row;
 
@@ -169,13 +170,20 @@ h2 {
 }
 
 .btn--contact-me {
+  border: 1px solid transparent;
+  border-radius: 100vh;
   color: var(--clr-accent);
   text-transform: uppercase;
   font-weight: 700;
 }
 
+.btn--contact-me:hover {
+  border: 1px solid var(--clr-accent);
+  transition: 0.3s;
+}
 
-@media (min-width: 1000px) {
+
+@media (min-width: 1200px) {
   #hamburger+label {
     display: none;
   }
@@ -223,7 +231,7 @@ h2 {
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .hero>* {
     justify-content: center;
     align-items: end;
