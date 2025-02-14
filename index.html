@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <section class=" hero bg-dark ">
+  <section class="hero bg-dark" id="hero">
     <div class="container row row--gap center">
       <div class="content col">
         <h2>Hello!</h2>
@@ -29,19 +29,19 @@
       <input type="checkbox" name="hamburger" id="hamburger" checked>
       <label for="hamburger">X</label>
       <ul class="nav-list">
-        <li class="nav-list-item " id="hello"><a href="#">Hello</a></li>
-        <li class="nav-list-item hover-light" id="aboutme"><a href="#" class>About Me</a></li>
-        <li class="nav-list-item hover-accent" id="education"><a href="#" class>Education</a></li>
-        <li class="nav-list-item" id="projects"><a href="#">Projects</a></li>
-        <li class="nav-list-item" id="other"><a href="#">Other</a></li>
+        <li class="nav-list-item"><a href="#hero">Hello</a></li>
+        <li class="nav-list-item hover-light"><a href="#aboutme" class>About Me</a></li>
+        <li class="nav-list-item hover-accent"><a href="#education" class>Education</a></li>
+        <li class="nav-list-item"><a href="#projects">Projects</a></li>
+        <li class="nav-list-item"><a href="#other">Other</a></li>
         <li class="nav-list-item"> <a class="btn btn--contact-me " href="#">Contact Me</a></li>
       </ul>
 
     </nav>
   </section>
 
-  <div class="row">
-    <section class="aboutme bg-light col">
+  <div class="row container">
+    <section class="aboutme bg-light col" id="aboutme">
       <div class="container vspace">
         <h1 class="clr-title-accent">About Me</h1>
         <div class="content">
@@ -63,14 +63,29 @@
         </div>
       </div>
     </section>
-    <section class="education bg-accent col">
-      <div class="container">
+
+    <section class="education bg-accent col" id="education">
+      <div class="container vspace">
         <h1 class="clr-title-accent">Education</h1>
+        <div class="content">
+          <ul class="vspace-small">
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic laborum, placeat enim neque, illum
+              voluptatem
+            </li>
+            <li>
+              voluptas debitis ducimus quas accusantium excepturi accusamus. Adipisci quisquam debitis quibusdam fugit
+              doloribus beatae perspiciatis.
+            </li>
+          </ul>
+
+
+        </div>
       </div>
     </section>
   </div>
 
-  <section class="projects bg-dark">
+  <section class="projects bg-dark" id="projects">
     <div class="container vspace">
       <center>
         <h1>Projects</h1>
@@ -79,7 +94,9 @@
         <h2>C/C++</h2>
 
         <div class="row row--gap">
-          <div class="card col">
+
+          <div class="card col"
+            onclick="window.location='https:\/\/github.com/matejabogdanovic/FAT-File-System-Simulation'">
             <h3 class="card-title">FAT File System Implemented on a .txt File</h3>
             <div class="row">
               <div class="card-stars-text">
@@ -117,7 +134,9 @@
               that simulates a disk. Hard disk class supports basic read and write operations to specific disk blocks,
               mimicking real disk interface.</div>
           </div>
-          <div class="card col">
+
+          <div class="card col"
+            onclick="window.location='https:\/\/github.com/matejabogdanovic/University/tree/main/Year2/Semester4/OS1/riscv-simple-kernel'">
             <h3 class="card-title">Simple Risc-V Kernel</h3>
             <div class="row">
               <div class="card-stars-text">

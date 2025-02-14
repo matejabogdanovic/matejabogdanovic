@@ -4,6 +4,7 @@
   --clr-light: #D9D9D9;
   --clr-white: #FFFFFF;
 
+
   --fs-small: 1rem;
   --fs-medium: 1.5rem;
   --fs-large: 2rem;
@@ -14,13 +15,18 @@
 
 @media (min-width: 1200px) {
   :root {
-    --fs-small: 1rem;
+
+    --fs-small: 1.25rem;
     --fs-medium: 2rem;
     --fs-large: 4rem;
     --fs-largest: 6rem;
 
     --spacer: 2rem;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -86,8 +92,11 @@ h3 {
   font-size: var(--fs-medium);
 }
 
-/* utility */
+section {
+  padding: var(--spacer) 0;
+}
 
+/* utility */
 
 .bg-dark {
   --bg-clr: var(--clr-dark);
@@ -110,6 +119,17 @@ h3 {
   --title-accent: var(--clr-dark);
 }
 
+.hover-light:hover {
+  background-color: var(--clr-light);
+  --clr: var(--clr-accent);
+  transition: 0.3s;
+}
+
+.hover-accent:hover {
+  background-color: var(--clr-accent);
+  --clr: var(--clr-dark);
+  transition: 0.3s;
+}
 
 .vspace>*+* {
   margin-top: var(--spacer);
@@ -132,31 +152,6 @@ h3 {
   width: 100%;
 }
 
-@media (min-width: 1200px) {
-
-  .row {
-    flex-direction: row;
-  }
-
-
-}
-
-section {
-  padding: var(--spacer) 0;
-}
-
-.hover-light:hover {
-  background-color: var(--clr-light);
-  --clr: var(--clr-accent);
-  transition: 0.3s;
-}
-
-.hover-accent:hover {
-  background-color: var(--clr-accent);
-  --clr: var(--clr-dark);
-  transition: 0.3s;
-}
-
 .container {
   width: 95%;
   max-width: 1400px;
@@ -164,26 +159,23 @@ section {
 }
 
 @media (min-width: 1200px) {
+  .row {
+    flex-direction: row;
+  }
+
   .container {
     width: 80%;
   }
 }
 
-#hamburger {
-  display: none;
-}
+/* buttons */
 
-#hamburger+label {
-  display: block;
-  text-align: center;
-  padding: 2rem;
-}
-
-#hamburger:checked+label+.nav-list {
-  display: none;
+.btn {
+  display: inline-block;
 }
 
 /* hero */
+
 .hero {
   height: 90dvh;
   padding: 0;
@@ -192,24 +184,18 @@ section {
 .hero>* {
   height: 90dvh;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .hero img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .hero .content h2 {
   font-weight: 100;
 }
 
-
 @media (min-width: 1200px) {
-
-  .hero>* {
-    justify-content: center;
-    align-items: end;
-  }
 
   .hero img {
     max-width: 40%;
@@ -218,6 +204,21 @@ section {
 }
 
 /* navigation */
+
+#hamburger {
+  display: none;
+}
+
+#hamburger+label {
+  display: block;
+  text-align: center;
+  padding: 2em;
+}
+
+#hamburger:checked+label+.nav-list {
+  display: none;
+}
+
 .navigation {
   min-height: 10dvh;
   padding: 0;
@@ -232,22 +233,18 @@ section {
   margin: 0;
 }
 
-.nav-list-item {
-  text-align: center;
-
-}
-
 .nav-list a {
   display: inline-block;
-  padding: 2rem;
+  padding: 2em;
+  width: 100%;
+}
+
+.nav-list-item {
+  text-align: center;
 }
 
 .nav-list-item a:not([class]):hover {
   color: var(--clr-white);
-}
-
-.btn {
-  display: inline-block;
 }
 
 .btn--contact-me {
@@ -269,20 +266,23 @@ section {
     display: none;
   }
 
+  #hamburger:checked+label+.nav-list {
+    display: flex;
+  }
+
   .primary-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-
-  }
-
-  #hamburger:checked+label+.nav-list {
-    display: flex;
   }
 
   .nav-list {
     display: flex;
+  }
+
+  .nav-list a {
+    width: auto;
   }
 
   .btn--contact-me {
@@ -291,33 +291,33 @@ section {
   }
 }
 
-.aboutme {}
+/* about me */
+
+.aboutme {
+  font-size: var(--fs-small);
+}
 
 .aboutme .content {
   font-weight: bold;
 }
 
-.aboutme .content hr {
-  border-color: var(--clr);
+/* education */
+
+.education {
+  font-size: var(--fs-small);
 }
 
-@media (min-width: 1200px) {
-  .aboutme .content {
-    font-size: 1.5rem;
-  }
-
+.education .content {
+  font-weight: bold;
 }
 
-.education {}
 
-.projects .card ul {
-  margin: 0;
-}
-
+/* projects */
 .projects .card {
   border: 5px solid var(--clr-accent);
   border-radius: 1rem;
   padding: 1em;
+  cursor: pointer;
 }
 
 .projects .card .card-title {
@@ -327,12 +327,13 @@ section {
   color: var(--title-accent);
 }
 
-
 .projects .card>.row {
   justify-content: space-between;
 }
 
-.projects .card .card-stars-text {}
+.projects .card ul {
+  margin: 0;
+}
 
 .projects .card .card-stars-text svg {
   fill: var(--clr-accent);
@@ -346,7 +347,6 @@ section {
 
 .projects .card hr {
   border-color: var(--clr);
-  /* margin-bottom: 0.5em; */
 }
 
 .projects .card .content {
@@ -354,6 +354,12 @@ section {
 }
 
 @media (min-width: 1200px) {
+
+  .projects .card:hover {
+    scale: 1.05;
+    transition: 0.1s;
+  }
+
   .projects .card .card-title {
     min-height: 3lh;
   }
