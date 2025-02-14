@@ -110,9 +110,6 @@ h3 {
   --title-accent: var(--clr-dark);
 }
 
-.hspacing>*+* {
-  margin-top: var(--spacer);
-}
 
 .vspace>*+* {
   margin-top: var(--spacer);
