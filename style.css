@@ -39,6 +39,7 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  z-index: 1;
 }
 
 h1,
@@ -175,6 +176,60 @@ section {
 }
 
 /* hero */
+.triangle-pattern {
+  transform-origin: top;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  scale: 0.5;
+  z-index: 0;
+}
+
+.pattern {
+  display: flex;
+  position: relative;
+  min-height: 107px;
+  /* 112px? */
+}
+
+.pattern :nth-child(2) {
+  left: 25px;
+}
+
+.pattern :nth-child(3) {
+  left: 100px;
+}
+
+.pattern :nth-child(4) {
+  left: 175px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 87px solid var(--clr-light);
+  opacity: 0.3;
+  position: absolute;
+}
+
+.triangle--half-1 {
+  border-left: 0;
+}
+
+.triangle--half-2 {
+  border-right: 0;
+}
+
+.triangle--accent {
+  border-bottom-color: var(--clr-accent);
+}
+
+.triangle--rotate {
+  transform: rotate(180deg);
+}
+
 
 .hero {
   height: 90dvh;
@@ -191,11 +246,18 @@ section {
   max-width: 90%;
 }
 
+.hero>.container {
+  position: relative;
+}
+
 .hero .content h2 {
   font-weight: 100;
 }
 
 @media (min-width: 1200px) {
+  .triangle-pattern {
+    scale: 1;
+  }
 
   .hero img {
     max-width: 40%;
