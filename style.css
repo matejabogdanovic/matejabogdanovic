@@ -184,7 +184,7 @@ section {
   z-index: 0;
 
   right: 0;
-  scale: 0.5;
+  scale: 0.6;
   transform: scaleX(-1);
 }
 
@@ -233,7 +233,6 @@ section {
   transform: rotate(180deg);
 }
 
-
 .hero {
   height: 90dvh;
   padding: 0;
@@ -249,9 +248,11 @@ section {
   max-width: 90%;
 }
 
+/* 
 .hero>.container {
   position: relative;
 }
+*/
 
 .hero .content h2 {
   font-weight: 100;
@@ -261,7 +262,7 @@ section {
   .triangle-pattern {
     left: 0;
     right: auto;
-    scale: 1;
+    scale: 1.2;
     transform: scaleX(1);
 
   }
@@ -292,6 +293,11 @@ section {
   min-height: 10dvh;
   padding: 0;
   padding-bottom: var(--spacer);
+}
+
+.navigation svg {
+  fill: var(--clr);
+  max-height: 20px;
 }
 
 .primary-nav {
@@ -329,6 +335,9 @@ section {
   transition: 0.3s;
 }
 
+#hamburger:not(:checked)+label>svg {
+  opacity: 0.3;
+}
 
 @media (min-width: 1200px) {
   #hamburger+label {
