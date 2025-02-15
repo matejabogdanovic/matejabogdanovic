@@ -179,10 +179,13 @@ section {
 .triangle-pattern {
   transform-origin: top;
   position: absolute;
-  left: 0;
+
   top: 0px;
-  scale: 0.5;
   z-index: 0;
+
+  right: 0;
+  scale: 0.5;
+  transform: scaleX(-1);
 }
 
 .pattern {
@@ -256,7 +259,11 @@ section {
 
 @media (min-width: 1200px) {
   .triangle-pattern {
+    left: 0;
+    right: auto;
     scale: 1;
+    transform: scaleX(1);
+
   }
 
   .hero img {
