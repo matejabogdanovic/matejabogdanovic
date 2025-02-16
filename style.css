@@ -215,6 +215,8 @@ section {
   border-bottom: 87px solid var(--clr-light);
   opacity: 0.3;
   position: absolute;
+
+
 }
 
 .triangle--half-1 {
@@ -227,6 +229,17 @@ section {
 
 .triangle--accent {
   border-bottom-color: var(--clr-accent);
+  animation: flip-triangle-animation 3s linear infinite;
+}
+
+@keyframes flip-triangle-animation {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
 }
 
 .triangle--rotate {
@@ -264,7 +277,6 @@ section {
     right: auto;
     scale: 1.2;
     transform: scaleX(1);
-
   }
 
   .hero img {
