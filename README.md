@@ -13,7 +13,8 @@ I am a third-year student at the **University of Belgrade, School of Electrical 
 A **React-based** web app for managing medical appointments with role-based dashboards and a responsive design.
 
 - **Tech:** React, TypeScript, Tailwind CSS
-- **Features:** Interactive scheduling, real-time updates, JWT authentication
+- **Features:** Interactive scheduling, JWT authentication
+- **Dashboards:** Admins, Doctors and Clients have separate dashboards
 - **Backend:** Spring Boot (Microservices)
 
 ### 📂 **C++ - 👉 <a href="https://github.com/matejabogdanovic/FAT-File-System-Simulation">FAT File System Implemented on a .txt File</a>**
