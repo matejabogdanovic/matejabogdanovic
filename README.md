@@ -8,7 +8,8 @@ I am a third-year student at the **University of Belgrade, School of Electrical 
 ---
 
 ## 🧑‍💻 Featured Projects
-### 📂 **React/TypeScript/Tailwind - 👉 <a href="https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System">Medical Appointment Management System</a>**
+
+### 🌐 **React/TypeScript/Tailwind - 👉 <a href="https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System">Medical Appointment Management System</a>**
 📅 **Year:** 2025\
 A **React-based** web app for managing medical appointments with role-based dashboards and a responsive design.
 
