@@ -69,7 +69,10 @@ const Listing = ({
         <button
           onClick={onLess}
           disabled={disabledLess.current}
-          className={disabledLess.current ? " opacity-50" : ""}
+          className={
+            " active:scale-105 transition-all " +
+            (disabledLess.current ? " opacity-50 " : "")
+          }
         >
           {iconLess}
         </button>
@@ -77,7 +80,10 @@ const Listing = ({
         <button
           onClick={onMore}
           disabled={disabledMore.current}
-          className={disabledMore.current ? " opacity-50" : ""}
+          className={
+            " active:scale-105 transition-all " +
+            (disabledMore.current ? " opacity-50 " : "")
+          }
         >
           {iconMore}
         </button>

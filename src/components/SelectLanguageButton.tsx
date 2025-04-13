@@ -21,7 +21,7 @@ const SelectLanguageButton = ({
         select(myId);
       }}
       className={
-        ` flex justify-center items-center ${iconSize} rounded-2xl p-2 transition-colors active:text-accent ` +
+        ` flex justify-center items-center ${iconSize} rounded-2xl p-2  active:text-accent active:scale-105 transition-all` +
         (selected == myId ? selectedStyle : hoverStyle)
       }
     >

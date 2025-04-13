@@ -11,3 +11,11 @@ body {
   font-family: Inter, sans-serif;
 
 }
+
+.active-link {
+  @apply active:scale-105 transition-all;
+}
+
+section {
+  @apply xl:mb-4;
+}
