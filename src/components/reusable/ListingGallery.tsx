@@ -9,6 +9,7 @@ const Listing = ({
   iconMore,
   mapContainerStyle = " ",
   iconContainerStyle = " ",
+  className = " ",
 }: {
   data: any[];
   maxShowCnt?: number;
@@ -18,6 +19,7 @@ const Listing = ({
   iconMore: any;
   mapContainerStyle?: string;
   iconContainerStyle?: string;
+  className?: string;
 }) => {
   const [showingData, setShowingData] = useState<any[]>([]);
   const disabledLess = useRef<boolean>(true);
@@ -61,7 +63,7 @@ const Listing = ({
   };
 
   return (
-    <>
+    <div className={className}>
       <div className={mapContainerStyle}>{showingData.map(mapFunction)}</div>
       <div className={iconContainerStyle}>
         <button
@@ -71,6 +73,7 @@ const Listing = ({
         >
           {iconLess}
         </button>
+
         <button
           onClick={onMore}
           disabled={disabledMore.current}
@@ -79,7 +82,7 @@ const Listing = ({
           {iconMore}
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

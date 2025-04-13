@@ -10,6 +10,7 @@ import { projects } from "../data/Projects";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import ListingGallery from "./reusable/ListingGallery";
 import { FaJava } from "react-icons/fa";
+
 export const icons: {
   language: ProjectLanguageType;
   icon: any;
@@ -70,6 +71,7 @@ const ProjectCardDisplay = () => {
           />
         ))}
       </div>
+
       {/* mobile */}
       <div className="xl:hidden">
         <ListingGallery
@@ -77,21 +79,22 @@ const ProjectCardDisplay = () => {
           maxShowCnt={1}
           showStep={1}
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
-          iconLess={<BsArrowLeftCircle className="text-accent text-5xl" />}
-          iconMore={<BsArrowRightCircle className="text-accent text-5xl" />}
-          mapContainerStyle="grid grid-cols-1 gap-4 min-h-[500px]"
-          iconContainerStyle="flex justify-center items-center gap-4 mt-4"
+          iconLess={<BsArrowLeftCircle className="text-light text-5xl" />}
+          iconMore={<BsArrowRightCircle className="text-light text-5xl" />}
+          mapContainerStyle="grid grid-cols-1 gap-4 "
+          iconContainerStyle="flex justify-center items-center gap-4 "
+          className="flex flex-col-reverse gap-2"
         />
       </div>
-      <div className="hidden xl:block">
+      <div className="hidden xl:block ">
         <ListingGallery
           data={data.sort((a, b) => b.difficulty - a.difficulty)}
           maxShowCnt={3}
           showStep={2}
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
-          iconLess={<BsArrowLeftCircle className="text-accent text-5xl" />}
-          iconMore={<BsArrowRightCircle className="text-accent text-5xl" />}
-          mapContainerStyle="grid grid-cols-3 gap-4 min-h-[500px]"
+          iconLess={<BsArrowLeftCircle className="text-light text-5xl" />}
+          iconMore={<BsArrowRightCircle className="text-light text-5xl " />}
+          mapContainerStyle="grid grid-cols-3 gap-4 h-[500px]"
           iconContainerStyle="flex justify-center items-center gap-4 mt-4"
         />
       </div>
