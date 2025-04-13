@@ -1,5 +1,5 @@
 const SelectLanguageButton = ({
-  iconSize = "text-9xl",
+  iconSize = "xl:text-9xl text-6xl",
   selectedStyle = " text-accent bg-light ",
   hoverStyle = " hover:bg-light hover:text-dark ",
   icon,

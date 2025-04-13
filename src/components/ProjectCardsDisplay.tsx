@@ -48,11 +48,11 @@ const ProjectCardDisplay = () => {
   }, [selected]);
   return (
     <>
-      <div className="grid grid-cols-2 xl:grid-cols-4  mb-4 gap-4">
+      <div className="grid grid-cols-4 xl:grid-cols-4  mb-4 gap-4">
         <SelectLanguageButton
           hoverStyle=" "
           selectedStyle=" text-accent "
-          iconSize="text-8xl"
+          iconSize="xl:text-8xl text-3xl"
           icon={<GrProjects />}
           selected={selected}
           myId={0}
@@ -81,9 +81,8 @@ const ProjectCardDisplay = () => {
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
           iconLess={<BsArrowLeftCircle className="text-light text-5xl" />}
           iconMore={<BsArrowRightCircle className="text-light text-5xl" />}
-          mapContainerStyle="grid grid-cols-1 gap-4 "
-          iconContainerStyle="flex justify-center items-center gap-4 "
-          className="flex flex-col-reverse gap-2"
+          mapContainerStyle="grid grid-cols-1 gap-4 min-h-[500px]"
+          iconContainerStyle="flex justify-center items-center gap-4 mt-4"
         />
       </div>
       <div className="hidden xl:block ">
@@ -94,7 +93,7 @@ const ProjectCardDisplay = () => {
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
           iconLess={<BsArrowLeftCircle className="text-light text-5xl" />}
           iconMore={<BsArrowRightCircle className="text-light text-5xl " />}
-          mapContainerStyle="grid grid-cols-3 gap-4 h-[500px]"
+          mapContainerStyle="grid grid-cols-3 gap-4 min-h-[500px]"
           iconContainerStyle="flex justify-center items-center gap-4 mt-4"
         />
       </div>
