@@ -4,6 +4,7 @@ import ContactMeButton from "../components/ContactMeButton";
 import Container from "../components/reusable/Container";
 import { GrClose } from "react-icons/gr";
 import { RxHamburgerMenu } from "react-icons/rx";
+import StarDisplay from "../components/StarDisplay";
 
 const SectionNav = ({ className = "" }: { className?: string }) => {
   const [menuShown, setMenuShown] = useState<boolean>(false);
@@ -83,8 +84,15 @@ const SectionNav = ({ className = "" }: { className?: string }) => {
               </a>
             </li>
             <li>
-              <a href="#projects" className="active-link" onClick={menuHide}>
-                Projects
+              <a
+                href="#projects"
+                className="active-link group"
+                onClick={menuHide}
+              >
+                <div className="relative">
+                  Projects
+                  <StarDisplay className="opacity-0 group-hover:opacity-100 transition-opacity flex text-xs justify-center items-center -mt-1 absolute" />
+                </div>
               </a>
             </li>
             <li>
