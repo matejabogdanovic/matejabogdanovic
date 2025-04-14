@@ -1,10 +1,9 @@
 import { useState } from "react";
-import ContactMeButton from "../components/ContactMeButton";
-
-import Container from "../components/reusable/Container";
-import { GrClose } from "react-icons/gr";
-import { RxHamburgerMenu } from "react-icons/rx";
-import StarDisplay from "../components/StarDisplay";
+import ContactMeButton from "../../components/ContactMeButton";
+import Container from "../../components/Container";
+import StarDisplay from "../../components/StarDisplay";
+import ButtonCloseNav from "./ButtonCloseNav";
+import ButtonOpenNav from "./ButtonOpenNav";
 
 const SectionNav = () => {
   const [menuShown, setMenuShown] = useState<boolean>(false);
@@ -25,14 +24,7 @@ const SectionNav = () => {
       id="menu"
     >
       <div className="xl:w-auto w-full [&>*]:w-full xl:hidden min-h-[10dvh] ">
-        <button
-          onClick={menuShow}
-          className={
-            "xl:hidden flex items-center justify-center p-8 min-h-[10dvh] active-link"
-          }
-        >
-          <RxHamburgerMenu className="fill-light" />
-        </button>
+        <ButtonOpenNav menuShow={menuShow} />
       </div>
 
       <nav
@@ -46,14 +38,7 @@ const SectionNav = () => {
         <Container containerCssAdd="flex flex-col justify-center items-center !p-0 xl:h-auto h-[100dvh]">
           <ul className="w-full xl:flex xl:flex-row flex-col items-center justify-center [&>li>a]:p-8 [&>li>a]:xl:flex [&>li>a]:block  [&>li>a]:items-center text-center xl:relative [&>li>a]:xl:min-h-[10dvh]">
             <li className="xl:w-auto w-full [&>*]:w-full absolute top-0 gradient-accent-red-b-2  ">
-              <button
-                onClick={menuHide}
-                className={
-                  "xl:hidden flex items-center justify-center p-8 h-full active-link"
-                }
-              >
-                <GrClose className="fill-light " />
-              </button>
+              <ButtonCloseNav menuHide={menuHide} />
             </li>
 
             <li>

@@ -1,4 +1,4 @@
-import { ProjectInfoType } from "../components/ProjectCard";
+import { ProjectInfoType } from "../sections/projects/ProjectCard";
 
 export const projects: ProjectInfoType[] = [
   {

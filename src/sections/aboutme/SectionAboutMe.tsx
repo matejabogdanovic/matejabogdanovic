@@ -1,4 +1,4 @@
-import CardSection from "../components/reusable/CardSection";
+import CardSection from "../../components/CardSection";
 
 const SectionAboutMe = () => {
   return (

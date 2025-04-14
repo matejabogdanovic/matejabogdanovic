@@ -1,6 +1,6 @@
 import { BsCircleFill } from "react-icons/bs";
-import CardSection from "../components/reusable/CardSection";
-import EducationListing from "../components/EducationListing";
+import EducationListing from "./EducationListing";
+import CardSection from "../../components/CardSection";
 
 const SectionEducation = () => {
   return (
@@ -12,8 +12,8 @@ const SectionEducation = () => {
       content={[
         <EducationListing
           from={2022}
-          to={<BsCircleFill />}
-          school={` University of Belgrade - School of Electrical Engineering`}
+          to={<BsCircleFill className="translate-y-1" />}
+          school={`University of Belgrade - School of Electrical Engineering`}
           field={"Computer Engineering and Informatics"}
         />,
         <EducationListing

@@ -6,10 +6,10 @@ import ProjectCard, {
   ProjectInfoType,
   ProjectLanguageType,
 } from "./ProjectCard";
-import { projects } from "../data/Projects";
+import { projects } from "../../data/Projects";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import ListingGallery from "./reusable/ListingGallery";
 import { FaJava } from "react-icons/fa";
+import ListingGallery from "../../components/ListingGallery";
 
 export const icons: {
   language: ProjectLanguageType;

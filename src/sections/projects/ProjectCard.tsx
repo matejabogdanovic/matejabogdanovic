@@ -1,5 +1,5 @@
 import { FaCalendar, FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
-import H3 from "./reusable/h/H3";
+import H3 from "../../components/h/H3";
 import { icons } from "./ProjectCardsDisplay";
 
 export type ProjectLanguageType = "cpp" | "react" | "java";

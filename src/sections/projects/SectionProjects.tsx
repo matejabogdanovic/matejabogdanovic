@@ -1,7 +1,7 @@
-import Container from "../components/reusable/Container";
-import H1 from "../components/reusable/h/H1";
-import ProjectCardsDisplay from "../components/ProjectCardsDisplay";
-import StarDisplay from "../components/StarDisplay";
+import Container from "../../components/Container";
+import H1 from "../../components/h/H1";
+import StarDisplay from "../../components/StarDisplay";
+import ProjectCardsDisplay from "./ProjectCardsDisplay";
 
 const SectionProjects = () => {
   return (

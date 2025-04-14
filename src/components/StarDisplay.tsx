@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import { starsColors } from "./ProjectCard";
+import { starsColors } from "../sections/projects/ProjectCard";
 
 const StarDisplay = ({ className = "" }: { className?: string }) => {
   let starDisplay = [];
