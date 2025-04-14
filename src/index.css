@@ -17,5 +17,9 @@ body {
 }
 
 section {
-  @apply xl:mb-4;
+  @apply xl:mb-4 scroll-mt-[10dvh];
+}
+
+.gradient-accent-red-b-2 {
+  @apply after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-accent after:to-[#9D0208]
 }
