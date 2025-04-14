@@ -1,4 +1,6 @@
+import { BsCircleFill } from "react-icons/bs";
 import CardSection from "../components/reusable/CardSection";
+import EducationListing from "../components/EducationListing";
 
 const SectionEducation = () => {
   return (
@@ -6,9 +8,20 @@ const SectionEducation = () => {
       className="bg-accent text-light [&_h1]:text-dark [&_h1]:!mt-0"
       id="education"
       title="Education"
+      contentStyle="[&>*]:text-lg [&>*]:font-bold [&>*]:mb-4 [&>:last-child]:!mb-0"
       content={[
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic laborum, placeat enim neque, illum voluptatem voluptas debitis ducimus quas accusantium excepturi accusamus.",
-        " Adipisci quisquam debitis quibusdam fugit doloribus beatae perspiciatis.",
+        <EducationListing
+          from={2022}
+          to={<BsCircleFill />}
+          school={` University of Belgrade - School of Electrical Engineering`}
+          field={"Computer Engineering and Informatics"}
+        />,
+        <EducationListing
+          from={2018}
+          to={2022}
+          school={`High School of Electrical Engineering - "Nikola Tesla", Belgrade`}
+          field={"Network Administrator"}
+        />,
       ]}
     />
   );

@@ -3,9 +3,10 @@ import CardSection from "../components/reusable/CardSection";
 const SectionAboutMe = () => {
   return (
     <CardSection
-      className="bg-light text-dark [&_h1]:text-accent [&_h1]:!mt-0"
+      className="bg-light text-dark [&_h1]:text-accent [&_h1]:!mt-0 "
       id="aboutme"
       title="About Me"
+      contentStyle="[&>*]:text-lg [&>*]:font-bold [&>*]:mb-4 [&>:last-child]:!mb-0"
       content={[
         <>
           I am a third-year student at the

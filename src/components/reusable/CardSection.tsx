@@ -3,11 +3,13 @@ import H1 from "./h/H1";
 
 const CardSection = ({
   className = "",
+  contentStyle = "",
   title = "",
   content,
   id,
 }: {
   className?: string;
+  contentStyle?: string;
   title?: string;
   content?: any[];
   id: string;
@@ -16,9 +18,9 @@ const CardSection = ({
     <section id={id} className={className}>
       <Container>
         <H1>{title}</H1>
-        <div>
+        <div className={contentStyle}>
           {content?.map((txt, index) => (
-            <p key={index}>{txt}</p>
+            <div key={index}>{txt}</div>
           ))}
         </div>
       </Container>
