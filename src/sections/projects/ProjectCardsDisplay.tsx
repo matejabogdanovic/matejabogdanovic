@@ -6,10 +6,12 @@ import ProjectCard, {
   ProjectInfoType,
   ProjectLanguageType,
 } from "./ProjectCard";
-import { projects } from "../../data/Projects";
+import { _projects } from "../../data/Projects";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { FaJava } from "react-icons/fa";
 import ListingGallery from "../../components/ListingGallery";
+import { OutletContextType } from "../../layouts/MainLayout";
+import { useOutletContext } from "react-router-dom";
 
 export const icons: {
   language: ProjectLanguageType;
@@ -38,6 +40,10 @@ const ProjectCardDisplay = () => {
     setSelected(myId);
   };
   const [data, setData] = useState<ProjectInfoType[]>([]);
+
+  const context: OutletContextType = useOutletContext();
+  const projects = _projects[context.language];
+
   useEffect(() => {
     if (selected != 0) {
       let lang = icons[selected - 1].language;
@@ -45,7 +51,7 @@ const ProjectCardDisplay = () => {
     } else {
       setData(projects);
     }
-  }, [selected]);
+  }, [selected, projects]);
   return (
     <>
       <div className="grid grid-cols-4 xl:grid-cols-4  mb-4 gap-4">
@@ -81,7 +87,7 @@ const ProjectCardDisplay = () => {
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
           iconLess={<BsArrowLeftCircle className="text-light text-5xl" />}
           iconMore={<BsArrowRightCircle className="text-light text-5xl" />}
-          mapContainerStyle="grid grid-cols-1 gap-4 min-h-[500px]"
+          mapContainerStyle="grid grid-cols-1 gap-4 min-h-[600px]"
           iconContainerStyle="flex justify-center items-center gap-4 mt-4"
         />
       </div>
@@ -93,7 +99,7 @@ const ProjectCardDisplay = () => {
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
           iconLess={<BsArrowLeftCircle className="text-light text-5xl" />}
           iconMore={<BsArrowRightCircle className="text-light text-5xl " />}
-          mapContainerStyle="grid grid-cols-3 gap-4 min-h-[500px]"
+          mapContainerStyle="grid grid-cols-3 gap-4 min-h-[600px]"
           iconContainerStyle="flex justify-center items-center gap-4 mt-4"
         />
       </div>

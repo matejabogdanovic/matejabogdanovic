@@ -1,8 +1,15 @@
+import { Link, useOutletContext } from "react-router-dom";
+import { OutletContextType } from "../layouts/MainLayout";
+
 const ContactMeButton = () => {
+  const context: OutletContextType = useOutletContext();
   return (
-    <a className="block cursor-pointer uppercase font-bold text-accent border-2 xl:border-transparent rounded-full xl:hover:border-accent border-accent active-link py-7 px-10">
-      Contact me
-    </a>
+    <Link
+      to="#"
+      className="block cursor-pointer uppercase font-bold text-accent border-2 xl:border-transparent rounded-full xl:hover:border-accent border-accent active-link py-7 px-10"
+    >
+      {context.language === 0 ? "Contact Me" : "Kontakt"}
+    </Link>
   );
 };
 

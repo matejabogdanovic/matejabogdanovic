@@ -4,8 +4,39 @@ import Container from "../../components/Container";
 import StarDisplay from "../../components/StarDisplay";
 import ButtonCloseNav from "./ButtonCloseNav";
 import ButtonOpenNav from "./ButtonOpenNav";
+import { OutletContextType } from "../../layouts/MainLayout";
+import { useOutletContext } from "react-router-dom";
+import NavbarLink from "./NavbarLink";
+
+type NavData = {
+  hello: string;
+  aboutme: string;
+  education: string;
+  projects: string;
+  other: string;
+};
+
+export const sectionNames: NavData[] = [
+  {
+    hello: "Hello",
+    aboutme: "About Me",
+    education: "Education",
+    projects: "Projects",
+    other: "Other",
+  },
+  {
+    hello: "Zdravo",
+    aboutme: "O meni",
+    education: "Obrazovanje",
+    projects: "Projekti",
+    other: "Ostalo",
+  },
+];
 
 const SectionNav = () => {
+  const context: OutletContextType = useOutletContext();
+  const data = sectionNames[context.language];
+
   const [menuShown, setMenuShown] = useState<boolean>(false);
   const menuShow = () => {
     setMenuShown(true);
@@ -20,7 +51,7 @@ const SectionNav = () => {
   return (
     <section
       className="[&_nav]:xl:!block sticky top-0 bg-dark z-10 min-h-[10dvh] 
-       gradient-accent-red-b-2 overflow-hidden"
+       gradient-accent-red-b-2  "
       id="menu"
     >
       <div className="xl:w-auto w-full [&>*]:w-full xl:hidden min-h-[10dvh] ">
@@ -29,63 +60,49 @@ const SectionNav = () => {
 
       <nav
         className={
-          "z-20 xl:block xl:opacity-100 xl:static xl:translate-x-0 xl:translate-y-0 fixed top-1/2 left-1/2 -translate-x-1/2  transition-all duration-700 w-full bg-dark " +
+          "z-20 xl:block xl:opacity-100 xl:static xl:translate-x-0 xl:translate-y-0 fixed top-1/2 left-1/2 -translate-x-1/2  transition-all duration-700 w-full bg-dark overflow-y-auto xl:overflow-y-hidden overflow-x-hidden xl:h-auto h-[100dvh] " +
           (menuShown
-            ? " opacity-100 overflow-hidden -translate-y-1/2 "
+            ? " opacity-100 -translate-y-1/2 "
             : "opacity-0 translate-y-1/2")
         }
       >
         <Container containerCssAdd="flex flex-col justify-center items-center !p-0 xl:h-auto h-[100dvh]">
-          <ul className="w-full xl:flex xl:flex-row flex-col items-center justify-center [&>li>a]:p-8 [&>li>a]:xl:flex [&>li>a]:block  [&>li>a]:items-center text-center xl:relative [&>li>a]:xl:min-h-[10dvh]">
-            <li className="xl:w-auto w-full [&>*]:w-full absolute top-0 gradient-accent-red-b-2  ">
+          <ul className="w-full xl:h-auto flex xl:flex-row flex-col items-center justify-center [&>li>a]:p-8 [&>li>a]:xl:flex [&>li>a]:block [&>li>a]:items-center text-center xl:relative [&>li>a]:xl:min-h-[10dvh]">
+            <li className=" xl:w-auto w-full [&>*]:w-full gradient-accent-red-b-2 relative  ">
               <ButtonCloseNav menuHide={menuHide} />
             </li>
 
-            <li>
-              <a
-                href="#hero"
-                className="active-link min-h-[10dvh]"
-                onClick={menuHide}
-              >
-                Hello
-              </a>
-            </li>
-            <li>
-              <a
-                href="#aboutme"
-                className=" hover:xl:bg-light hover:xl:text-accent transition-colors active-link bg-light text-accent xl:text-inherit xl:bg-inherit"
-                onClick={menuHide}
-              >
-                About Me
-              </a>
-            </li>
-            <li>
-              <a
-                href="#education"
-                className=" hover:xl:bg-accent hover:xl:text-dark transition-colors active-link bg-accent text-dark xl:text-inherit xl:bg-inherit"
-                onClick={menuHide}
-              >
-                Education
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="active-link group"
-                onClick={menuHide}
-              >
+            <NavbarLink
+              to="#hero"
+              className=" min-h-[10dvh]"
+              children={data.hello}
+              onClick={menuHide}
+            />
+            <NavbarLink
+              to="#aboutme"
+              className=" hover:xl:bg-light hover:xl:text-accent transition-colors  bg-light text-accent xl:text-inherit xl:bg-inherit"
+              children={data.aboutme}
+              onClick={menuHide}
+            />
+            <NavbarLink
+              to="#education"
+              className=" hover:xl:bg-accent hover:xl:text-dark transition-colors  bg-accent text-dark xl:text-inherit xl:bg-inherit"
+              children={data.education}
+              onClick={menuHide}
+            />
+            <NavbarLink
+              to="#projects"
+              className="group"
+              children={
                 <div className="relative">
-                  Projects
+                  {data.projects}
                   <StarDisplay className="xl:opacity-0 group-hover:xl:opacity-100 opacity-100 transition-opacity flex text-xs justify-center items-center -mt-1 absolute left-1/2 -translate-x-1/2" />
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="active-link" onClick={menuHide}>
-                Other
-              </a>
-            </li>
-            <div className="xl:absolute right-0 px-8 xl:px-0">
+              }
+              onClick={menuHide}
+            />
+            <NavbarLink to="#" children={data.other} onClick={menuHide} />
+            <div className="xl:absolute right-0 px-8 xl:px-0 xl:w-auto w-full">
               <ContactMeButton />
             </div>
           </ul>
