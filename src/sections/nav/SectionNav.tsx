@@ -60,24 +60,22 @@ const SectionNav = () => {
 
       <nav
         className={
-          "z-20 xl:block xl:opacity-100 xl:static xl:translate-x-0 xl:translate-y-0 fixed top-1/2 left-1/2 -translate-x-1/2  transition-all duration-700 w-full bg-dark overflow-y-auto xl:overflow-y-hidden overflow-x-hidden xl:h-auto h-[100dvh] " +
-          (menuShown
-            ? " opacity-100 -translate-y-1/2 "
-            : "opacity-0 translate-y-1/2")
+          "z-20 xl:block xl:opacity-100 xl:static xl:translate-x-0 xl:translate-y-0 fixed top-1/2 left-1/2 -translate-x-1/2  transition-all duration-700 w-full bg-dark overflow-y-auto xl:overflow-y-hidden overflow-x-hidden xl:h-auto h-[100dvh] grid grid-flow-row  grid-rows-[auto_1fr] " +
+          (menuShown ? "  -translate-y-1/2 " : "  translate-y-1/2")
         }
       >
-        <Container containerCssAdd="flex flex-col justify-center items-center !p-0 xl:h-auto h-[100dvh]">
-          <ul className="w-full xl:h-auto flex xl:flex-row flex-col items-center justify-center [&>li>a]:p-8 [&>li>a]:xl:flex [&>li>a]:block [&>li>a]:items-center text-center xl:relative [&>li>a]:xl:min-h-[10dvh]">
-            <li className=" xl:w-auto w-full [&>*]:w-full gradient-accent-red-b-2 relative  ">
-              <ButtonCloseNav menuHide={menuHide} />
-            </li>
-
+        <div className=" xl:w-auto w-full [&>*]:w-full gradient-accent-red-b-2 relative  place-self-start">
+          <ButtonCloseNav menuHide={menuHide} />
+        </div>
+        <Container containerCssAdd="  place-self-center flex flex-col justify-center items-center !p-0 ">
+          <ul className="w-full flex xl:flex-row flex-col items-center justify-center [&>li>a]:p-8 [&>li>a]:xl:flex [&>li>a]:block [&>li>a]:items-center text-center xl:relative [&>li>a]:xl:min-h-[10dvh]   ">
             <NavbarLink
               to="#hero"
               className=" min-h-[10dvh]"
               children={data.hello}
               onClick={menuHide}
             />
+
             <NavbarLink
               to="#aboutme"
               className=" hover:xl:bg-light hover:xl:text-accent transition-colors  bg-light text-accent xl:text-inherit xl:bg-inherit"
