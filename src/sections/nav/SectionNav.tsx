@@ -61,7 +61,7 @@ const SectionNav = () => {
       <nav
         className={
           "z-20 xl:block xl:opacity-100 xl:static xl:translate-x-0 xl:translate-y-0 fixed top-1/2 left-1/2 -translate-x-1/2  transition-all duration-700 w-full bg-dark overflow-y-auto xl:overflow-y-hidden overflow-x-hidden xl:h-auto h-[100dvh] grid grid-flow-row  grid-rows-[auto_1fr] " +
-          (menuShown ? "  -translate-y-1/2 " : "  translate-y-1/2")
+          (menuShown ? " -translate-y-1/2 " : "   translate-y-1/2 opacity-0 ")
         }
       >
         <div className=" xl:w-auto w-full [&>*]:w-full gradient-accent-red-b-2 relative  place-self-start">
@@ -99,7 +99,7 @@ const SectionNav = () => {
               }
               onClick={menuHide}
             />
-            <NavbarLink to="#" children={data.other} onClick={menuHide} />
+            <NavbarLink to="#other" children={data.other} onClick={menuHide} />
             <div className="xl:absolute right-0 px-8 xl:px-0 xl:w-auto w-full">
               <ContactMeButton />
             </div>

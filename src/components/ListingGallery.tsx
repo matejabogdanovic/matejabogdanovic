@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const Listing = ({
+const ListingGallery = ({
   data,
   maxShowCnt = 3,
   showStep = 1,
@@ -92,4 +92,4 @@ const Listing = ({
   );
 };
 
-export default Listing;
+export default ListingGallery;

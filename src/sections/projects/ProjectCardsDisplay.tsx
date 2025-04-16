@@ -12,6 +12,7 @@ import { FaJava } from "react-icons/fa";
 import ListingGallery from "../../components/ListingGallery";
 import { OutletContextType } from "../../layouts/MainLayout";
 import { useOutletContext } from "react-router-dom";
+import ListingScrollGallery from "../../components/ListingScrollGallery";
 
 export const icons: {
   language: ProjectLanguageType;
@@ -80,7 +81,7 @@ const ProjectCardDisplay = () => {
 
       {/* mobile */}
       <div className="xl:hidden">
-        <ListingGallery
+        {/* <ListingGallery
           data={data.sort((a, b) => b.difficulty - a.difficulty)}
           maxShowCnt={1}
           showStep={1}
@@ -89,6 +90,11 @@ const ProjectCardDisplay = () => {
           iconMore={<BsArrowRightCircle className="text-light text-5xl" />}
           mapContainerStyle="grid grid-cols-1 gap-4 min-h-[600px]"
           iconContainerStyle="flex justify-center items-center gap-4 mt-4"
+        /> */}
+        <ListingScrollGallery
+          mapContainerStyle="flex flex-col gap-4 overflow-y-scroll custom-scrollbar h-[60vh] [&>*]:min-h-fit"
+          data={data.sort((a, b) => b.difficulty - a.difficulty)}
+          mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
         />
       </div>
       <div className="hidden xl:block ">

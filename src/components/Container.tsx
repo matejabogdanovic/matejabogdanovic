@@ -1,9 +1,9 @@
 const Container = ({
-  children,
+  children = "",
 
   containerCssAdd = "",
 }: {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 
   containerCssAdd?: string;
 }) => {
