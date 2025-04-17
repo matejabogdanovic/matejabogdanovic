@@ -55,7 +55,7 @@ const ProjectCardDisplay = () => {
   }, [selected, projects]);
   return (
     <>
-      <div className="grid grid-cols-4 xl:grid-cols-4  mb-4 gap-4">
+      <div className="grid grid-cols-4 xl:grid-cols-4  mb-4 gap-4 ">
         <SelectLanguageButton
           hoverStyle=" "
           selectedStyle=" text-accent "
@@ -92,7 +92,7 @@ const ProjectCardDisplay = () => {
           iconContainerStyle="flex justify-center items-center gap-4 mt-4"
         /> */}
         <ListingScrollGallery
-          mapContainerStyle="flex flex-col gap-4 overflow-y-scroll custom-scrollbar h-[60vh] [&>*]:min-h-fit"
+          mapContainerStyle="flex flex-col gap-4 overflow-y-scroll custom-scrollbar h-[60vh] [&>*]:min-h-fit rounded-2xl "
           data={data.sort((a, b) => b.difficulty - a.difficulty)}
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
         />
