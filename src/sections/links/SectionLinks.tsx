@@ -10,8 +10,11 @@ const SectionLinks = () => {
     <section id="links" className="!mb-0 mt-8">
       <div className="bg-light bg-opacity-5 xl:rounded-t-[8rem] rounded-t-[5rem]">
         <Container containerCssAdd="py-4">
-          <div className="grid gap-4 justify-items-center content-center place-self-center xl:grid-cols-3 grid-cols-1">
-            <div className="grid  text-light">
+          <div
+            className="grid gap-4 justify-items-center content-center place-self-center
+    xl:grid-rows-1 xl:grid-cols-3 grid-cols-4 "
+          >
+            <div className="grid row-start-1 text-light col-span-full xl:col-span-1 ">
               <ContactMeButton />
             </div>
             <MyLink
