@@ -13,7 +13,7 @@ type NavData = {
   aboutme: string;
   education: string;
   projects: string;
-  other: string;
+  links: string;
 };
 
 export const sectionNames: NavData[] = [
@@ -22,14 +22,14 @@ export const sectionNames: NavData[] = [
     aboutme: "About Me",
     education: "Education",
     projects: "Projects",
-    other: "Other",
+    links: "Links",
   },
   {
     hello: "Zdravo",
     aboutme: "O meni",
     education: "Obrazovanje",
     projects: "Projekti",
-    other: "Ostalo",
+    links: "Linkovi",
   },
 ];
 
@@ -50,7 +50,7 @@ const SectionNav = () => {
   };
   return (
     <section
-      className="[&_nav]:xl:!block sticky top-0 bg-dark z-10 min-h-[10dvh] 
+      className="[&_nav]:xl:!block sticky top-0 bg-dark-900 z-10 min-h-[10dvh] 
        gradient-accent-red-b-2  "
       id="menu"
     >
@@ -60,7 +60,7 @@ const SectionNav = () => {
 
       <nav
         className={
-          "z-20 xl:block xl:opacity-100 xl:static xl:translate-x-0 xl:translate-y-0 fixed top-1/2 left-1/2 -translate-x-1/2  transition-all duration-700 w-full bg-dark overflow-y-auto xl:overflow-y-hidden overflow-x-hidden xl:h-auto h-[100dvh] grid grid-flow-row  grid-rows-[auto_1fr] " +
+          "z-20 xl:block xl:opacity-100 xl:static xl:translate-x-0 xl:translate-y-0 fixed top-1/2 left-1/2 -translate-x-1/2  transition-all duration-700 w-full bg-dark-900 overflow-y-auto xl:overflow-y-hidden overflow-x-hidden xl:h-auto h-[100dvh] grid grid-flow-row  grid-rows-[auto_1fr] " +
           (menuShown ? " -translate-y-1/2 " : "   translate-y-1/2 opacity-0 ")
         }
       >
@@ -68,7 +68,7 @@ const SectionNav = () => {
           <ButtonCloseNav menuHide={menuHide} />
         </div>
         <Container containerCssAdd="  place-self-center flex flex-col justify-center items-center !p-0 ">
-          <ul className="w-full flex xl:flex-row flex-col items-center justify-center [&>li>a]:p-8 [&>li>a]:xl:flex [&>li>a]:block [&>li>a]:items-center text-center xl:relative [&>li>a]:xl:min-h-[10dvh]   ">
+          <ul className="w-full flex xl:flex-row flex-col items-center justify-center [&>li>a]:p-8 [&>li>a]:xl:flex [&>li>a]:block [&>li>a]:items-center text-center xl:relative [&>li>a]:xl:min-h-[10dvh]  ">
             <NavbarLink
               to="#hero"
               className=" min-h-[10dvh]"
@@ -84,7 +84,7 @@ const SectionNav = () => {
             />
             <NavbarLink
               to="#education"
-              className=" hover:xl:bg-accent hover:xl:text-dark transition-colors  bg-accent text-dark xl:text-inherit xl:bg-inherit"
+              className=" hover:xl:bg-accent hover:xl:text-dark-900 transition-colors  bg-accent text-dark-900 xl:text-inherit xl:bg-inherit"
               children={data.education}
               onClick={menuHide}
             />
@@ -99,8 +99,13 @@ const SectionNav = () => {
               }
               onClick={menuHide}
             />
-            <NavbarLink to="#other" children={data.other} onClick={menuHide} />
-            <div className="xl:absolute right-0 px-8 xl:px-0 xl:w-auto w-full">
+            <NavbarLink
+              to="#links"
+              className="xl:hover:bg-light xl:hover:bg-opacity-5  xl:hover:rounded-t-3xl bg-light bg-opacity-5 xl:bg-inherit rounded-t-3xl transition-all"
+              children={data.links}
+              onClick={menuHide}
+            />
+            <div className="xl:absolute right-0 px-8 xl:px-0 xl:w-auto hidden xl:block ">
               <ContactMeButton />
             </div>
           </ul>

@@ -1,7 +1,7 @@
 const SelectLanguageButton = ({
   iconSize = "xl:text-9xl text-6xl",
   selectedStyle = " text-accent bg-light ",
-  hoverStyle = " hover:bg-light hover:text-dark ",
+  hoverStyle = " hover:bg-light hover:text-dark-900 ",
   icon,
   selected,
   select,

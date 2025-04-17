@@ -41,7 +41,7 @@ const SectionEducation = () => {
   const data = educationData[context.language];
   return (
     <CardSection
-      className="bg-accent text-light [&_h1]:text-dark [&_h1]:!mt-0"
+      className="bg-accent text-light [&_h1]:text-dark-900 [&_h1]:!mt-0"
       id="education"
       title={sectionNames[context.language].education}
       contentStyle="[&>*]:text-lg [&>*]:font-bold [&>*]:mb-4 [&>:last-child]:!mb-0"

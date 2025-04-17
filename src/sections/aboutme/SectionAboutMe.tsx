@@ -53,7 +53,7 @@ const SectionAboutMe = () => {
   const data = aboutmeData[context.language];
   return (
     <CardSection
-      className="bg-light text-dark [&_h1]:text-accent [&_h1]:!mt-0 "
+      className="bg-light text-dark-900 [&_h1]:text-accent [&_h1]:!mt-0 "
       id="aboutme"
       title={sectionNames[context.language].aboutme}
       contentStyle="[&>*]:text-lg [&>*]:font-bold [&>*]:mb-4 [&>:last-child]:!mb-0"

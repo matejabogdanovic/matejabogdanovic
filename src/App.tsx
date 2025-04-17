@@ -6,7 +6,7 @@ import SectionHero from "./sections/hero/SectionHero";
 import SectionNav from "./sections/nav/SectionNav";
 import SectionProjects from "./sections/projects/SectionProjects";
 import MainLayout from "./layouts/MainLayout";
-import SectionOther from "./sections/other/SectionOther";
+import SectionOther from "./sections/links/SectionLinks";
 
 const App = () => {
   const router = createHashRouter([
