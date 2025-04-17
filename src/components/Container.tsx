@@ -1,10 +1,8 @@
 const Container = ({
   children = "",
-
   containerCssAdd = "",
 }: {
   children?: React.ReactNode;
-
   containerCssAdd?: string;
 }) => {
   return (

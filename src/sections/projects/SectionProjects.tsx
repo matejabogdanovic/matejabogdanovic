@@ -11,7 +11,7 @@ const SectionProjects = () => {
   return (
     <section id="projects" className="xl:px-16">
       <Container>
-        <H1 cssAddStyle="w-full text-center">
+        <H1 cssAddStyle="w-full text-center xl:!mt-0">
           <>
             {sectionNames[context.language].projects}
             <StarDisplay className="flex xl:text-2xl text-base justify-center items-center xl:-mt-3 -mt-2 xl:gap-10 gap-4" />

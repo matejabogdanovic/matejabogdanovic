@@ -3,7 +3,6 @@ import image from "../../assets/hero_img.png";
 import Container from "../../components/Container";
 import H1 from "../../components/h/H1";
 import ButtonLanguage from "./ButtonLanguage";
-
 import Triangles from "./Triangles";
 import { OutletContextType } from "../../layouts/MainLayout";
 

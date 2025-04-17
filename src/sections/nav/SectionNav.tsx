@@ -13,6 +13,7 @@ type NavData = {
   aboutme: string;
   education: string;
   projects: string;
+  interests: string;
   links: string;
 };
 
@@ -22,6 +23,7 @@ export const sectionNames: NavData[] = [
     aboutme: "About Me",
     education: "Education",
     projects: "Projects",
+    interests: "Interests",
     links: "Links",
   },
   {
@@ -29,6 +31,8 @@ export const sectionNames: NavData[] = [
     aboutme: "O meni",
     education: "Obrazovanje",
     projects: "Projekti",
+    interests: "Interesovanja",
+
     links: "Linkovi",
   },
 ];
@@ -98,6 +102,11 @@ const SectionNav = () => {
                 </div>
               }
               onClick={menuHide}
+            />
+            <NavbarLink
+              to="#interests"
+              onClick={menuHide}
+              children={data.interests}
             />
             <NavbarLink
               to="#links"

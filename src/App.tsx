@@ -7,6 +7,7 @@ import SectionNav from "./sections/nav/SectionNav";
 import SectionProjects from "./sections/projects/SectionProjects";
 import MainLayout from "./layouts/MainLayout";
 import SectionOther from "./sections/links/SectionLinks";
+import SectionInterests from "./sections/interests/SectionInterests";
 
 const App = () => {
   const router = createHashRouter([
@@ -26,6 +27,7 @@ const App = () => {
                 <SectionEducation />
               </Container>
               <SectionProjects />
+              <SectionInterests />
               <SectionOther />
             </>
           ),
