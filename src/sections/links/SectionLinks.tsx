@@ -8,7 +8,7 @@ const SectionLinks = () => {
   // const context: OutletContextType = useOutletContext();
   return (
     <section id="links" className="!mb-0 mt-8">
-      <div className="bg-light bg-opacity-5 xl:rounded-t-[8rem] rounded-t-[5rem]">
+      <div className="bg-light bg-opacity-5 xl:rounded-t-full rounded-t-[3.3rem] ">
         <Container containerCssAdd="py-4">
           <div
             className="grid gap-4 justify-items-center content-center place-self-center

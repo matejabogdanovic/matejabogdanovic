@@ -80,7 +80,7 @@ const SectionInterests = () => {
             ? "I have high interest in..."
             : "Interesuje me..."}
         </H1>
-        <div className="flex flex-wrap xl:justify-between xl:gap-4">
+        <div className="flex flex-wrap justify-between xl:gap-4">
           {interests.map((e, i) => (
             <InterestCard title={e.title} content={e.content} key={i} />
           ))}
