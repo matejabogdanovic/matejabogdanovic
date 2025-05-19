@@ -95,6 +95,24 @@ export const _projects: ProjectInfoType[][] = [
         </ul>
       ),
     },
+    {
+      title: "Custom Database with Java Sockets",
+      link: "https://github.com/matejabogdanovic/MBDatabase-Messaging-Database",
+      language: "java",
+      difficulty: 2,
+      year: 2025,
+      description: (
+        <>
+          This project implements a (horrible) custom database using Java
+          sockets for communication between a multi-threaded server and multiple
+          clients. <br /> The server listens for incoming requests and processes
+          and stores messages in separate files for each chat. <br />
+          Clients connect to the server to send and retrieve messages.
+          <br /> Note that this project is designed to be used with Spring Boot
+          or other similar frameworks.
+        </>
+      ),
+    },
   ], // end english
   [
     // start serbian
@@ -189,6 +207,25 @@ export const _projects: ProjectInfoType[][] = [
             reprezentaciju
           </li>
         </ul>
+      ),
+    },
+    {
+      title: "Custom baza podataka sa Java soketima",
+      link: "https://github.com/matejabogdanovic/MBDatabase-Messaging-Database",
+      language: "java",
+      difficulty: 2,
+      year: 2025,
+      description: (
+        <>
+          Ovaj projekat implementira (užasnu) custom bazu podataka koristeći
+          Java sokete za komunikaciju između višenitnog servera i više
+          klijenata. <br />
+          Server osluškuje dolazne zahteve, obrađuje ih i čuva poruke u posebnim
+          fajlovima za svaki čet. <br />
+          Klijenti se povezuju na server kako bi slali i preuzimali poruke.
+          <br /> Napomena: ovaj projekat je zamišljen da se koristi uz Spring
+          Boot ili slični framework.
+        </>
       ),
     },
   ],
