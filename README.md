@@ -9,6 +9,18 @@ I am a third-year student at the **University of Belgrade, School of Electrical 
 
 ## 🧑‍💻 Featured Projects
 
+
+### 💻 **C++ - 👉  <a href="https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator">Assembler, Linker & Emulator</a>**
+
+📅 **Year:** 2025  
+
+A single project implementing a **complete toolchain**:
+
+- **Assembler:** Single-pass assembler converting assembly code into textual or binary object files
+- **Linker:** Target-independent linker combining multiple assembler outputs, resolving symbols, and generating relocatable or memory initialization files  
+- **Emulator:** Interpretive emulator executing programs from memory initialization files, emulating CPU registers and terminal I/O until the `halt` instruction
+
+
 ### 🌐 **React/TypeScript/Tailwind - 👉 <a href="https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System">Medical Appointment Management System</a>**
 
 📅 **Year:** 2025\
