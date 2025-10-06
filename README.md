@@ -12,8 +12,7 @@ I am a third-year student at the **University of Belgrade, School of Electrical 
 
 ### 💻 **C++ - 👉  <a href="https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator">Assembler, Linker & Emulator</a>**
 
-📅 **Year:** 2025  
-
+📅 **Year:** 2025\
 A single project implementing a **complete toolchain**:
 
 - **Assembler:** Single-pass assembler converting assembly code into textual or binary object files
