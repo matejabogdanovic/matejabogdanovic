@@ -5,10 +5,31 @@ I am a third-year student at the **University of Belgrade, School of Electrical 
 📧 **Email:** bogdanovicmateja75@gmail.com  
 📍 **Location:** Belgrade, Serbia
 
----
 
 ## 🧑‍💻 Featured Projects
+---
 
+
+### 🌐 **MEAN Stack - 👉 <a href="https://github.com/matejabogdanovic/PIA-MEAN-Mountain-Cottage">Cottage Booking App</a>**
+
+📅 **Year:** 2025\
+A full-stack web application for **cottage reservation and management**, developed using the **MEAN stack** and **Tailwind CSS** for responsive, modern design.
+
+- **Frontend (Angular + Tailwind):** Interactive user interface with multiple roles (Tourist, Owner, Admin)
+- **Backend (Node.js + Express):** REST API handling authentication, reservations, and data management
+- **Database (MongoDB):** Stores users, cottages, and reservation data efficiently
+- **Features:** Dynamic dashboards, statistics visualization, and calendar-based reservation system
+  
+### 🌐 **React/TypeScript/Tailwind - 👉 <a href="https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System">Medical Appointment Management System</a>**
+
+📅 **Year:** 2025\
+A **React-based** web app for managing medical appointments with role-based dashboards and a responsive design.
+
+- **Features:** Optimized search, JWT authentication
+- **Dashboards:** Admins, Doctors and Clients have separate dashboards with custom features
+- **Backend:** Spring Boot (Microservices) - **Not developed by me**
+
+---
 
 ### 💻 **C++ - 👉  <a href="https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator">Assembler, Linker & Emulator</a>**
 
@@ -19,15 +40,17 @@ A single project implementing a **complete toolchain**:
 - **Linker:** Target-independent linker combining multiple assembler outputs, resolving symbols, and generating relocatable or memory initialization files  
 - **Emulator:** Interpretive emulator executing programs from memory initialization files, emulating CPU registers and terminal I/O until the `halt` instruction
 
-
-### 🌐 **React/TypeScript/Tailwind - 👉 <a href="https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System">Medical Appointment Management System</a>**
+### ⚙️ **C - 👉 <a href="https://github.com/matejabogdanovic/AOR2-KVM-Virtual-Machine">Mini Hypervisor Project</a>**
 
 📅 **Year:** 2025\
-A **React-based** web app for managing medical appointments with role-based dashboards and a responsive design.
+A low-level systems project implementing a simplified **hypervisor** using the **KVM (Kernel-based Virtual Machine)** API in C.
 
-- **Features:** Optimized search, JWT authentication
-- **Dashboards:** Admins, Doctors and Clients have separate dashboards with custom features
-- **Backend:** Spring Boot (Microservices) - **Not developed by me**
+- **Purpose:** Run guest virtual machines (VMs) in 64-bit long mode with configurable memory and page size
+- **Version A:** Single VM execution with serial I/O and `hlt` termination handling  
+- **Version B:** Concurrent multi-VM support using POSIX threads  
+- **Version C:** Guest file I/O operations via I/O ports (open, read, write, close)
+- **Focus:** Memory management, virtualization, and I/O emulation at kernel level
+
 
 ### 📂 **C++ - 👉 <a href="https://github.com/matejabogdanovic/FAT-File-System-Simulation">FAT File System Implemented on a .txt File</a>**
 
@@ -45,3 +68,5 @@ A simple RISC-V kernel that supports:
 - Preemption
 
 The project includes **memory management**, **threads**, **semaphores**, and an **I/O system**.
+
+---
