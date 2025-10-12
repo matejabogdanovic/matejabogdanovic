@@ -6,7 +6,7 @@ import { sectionNames } from "../nav/SectionNav";
 const aboutmeData = [
   [
     <>
-      I am a third-year student at the
+      I am a fourth-year student at the
       <span className="text-accent">
         {" "}
         University of Belgrade - School of Electrical Engineering
@@ -28,7 +28,7 @@ const aboutmeData = [
   ],
   [
     <>
-      Student sam treće godine na
+      Student sam četvrte godine na
       <span className="text-accent">
         {" "}
         Elektrotehničkom fakultetu Univerziteta u Beogradu

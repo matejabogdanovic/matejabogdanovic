@@ -4,6 +4,114 @@ export const _projects: ProjectInfoType[][] = [
   [
     // start english
     {
+      title: "Assembler, Linker & Emulator",
+      link: "https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator",
+      language: "cpp",
+      difficulty: 4,
+      year: 2025,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          A single project implementing a <b>complete toolchain</b>:
+          <li>
+            <b>Assembler:</b> Single-pass assembler converting assembly code
+            into textual or binary object files
+          </li>
+          <li>
+            <b>Linker:</b> Target-independent linker combining assembler
+            outputs, resolving symbols, and generating relocatable or memory
+            init files
+          </li>
+          <li>
+            <b>Emulator:</b> Interpretive emulator executing programs from
+            memory initialization files, emulating CPU registers and terminal
+            I/O
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: "FAT File System Implemented on a .txt File",
+      link: "https://github.com/matejabogdanovic/FAT-File-System-Simulation",
+      language: "cpp",
+      difficulty: 3.5,
+      year: 2025,
+      description: (
+        <>
+          A simple FAT file system implemented using a plain text file,
+          encapsulated in a class that simulates a disk.
+          <br />
+          Hard disk class supports basic read and write operations to specific
+          disk blocks, mimicking real disk interface
+        </>
+      ),
+    },
+    {
+      title: "Cottage Booking App",
+      link: "https://github.com/matejabogdanovic/PIA-MEAN-Mountain-Cottage",
+      language: "angular",
+      difficulty: 3.5,
+      year: 2025,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          Full-stack web application for{" "}
+          <b>cottage reservation and management</b>, developed using the{" "}
+          <b>MEAN stack</b> and <b>Tailwind CSS</b> for responsive, modern
+          design.
+          <li>
+            <b>Frontend (Angular + Tailwind):</b> Interactive interface with
+            multiple roles (Tourist, Owner, Admin)
+          </li>
+          <li>
+            <b>Backend (Node.js + Express):</b> REST API for authentication,
+            reservations, and data management
+          </li>
+          <li>
+            <b>Database (MongoDB):</b> Efficiently stores users, cottages, and
+            reservation data
+          </li>
+          <li>
+            <b>Features:</b> Dynamic dashboards, statistics visualization, and
+            calendar-based reservation system
+          </li>
+        </ul>
+      ),
+    },
+
+    {
+      title: "Mini Hypervisor Project",
+      link: "https://github.com/matejabogdanovic/AOR2-KVM-Virtual-Machine",
+      language: "cpp",
+      difficulty: 3.5,
+      year: 2025,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          A low-level systems project implementing a simplified{" "}
+          <b>hypervisor</b> using the
+          <b> KVM (Kernel-based Virtual Machine)</b> API in C.
+          <li>
+            <b>Purpose:</b> Run guest VMs in 64-bit long mode with configurable
+            memory and page size
+          </li>
+          <li>
+            <b>Version A:</b> Single VM execution with serial I/O and{" "}
+            <code>hlt</code> termination
+          </li>
+          <li>
+            <b>Version B:</b> Concurrent multi-VM support using POSIX threads
+          </li>
+          <li>
+            <b>Version C:</b> Guest file I/O via I/O ports (open, read, write,
+            close)
+          </li>
+          <li>
+            <b>Focus:</b> Memory management, virtualization, and kernel-level
+            I/O emulation
+          </li>
+        </ul>
+      ),
+    },
+
+    {
       title: "Medical Appointment Management System",
       link: "https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System",
       language: "react",
@@ -26,22 +134,7 @@ export const _projects: ProjectInfoType[][] = [
         </ul>
       ),
     },
-    {
-      title: "FAT File System Implemented on a .txt File",
-      link: "https://github.com/matejabogdanovic/FAT-File-System-Simulation",
-      language: "cpp",
-      difficulty: 3.5,
-      year: 2025,
-      description: (
-        <>
-          A simple FAT file system implemented using a plain text file,
-          encapsulated in a class that simulates a disk.
-          <br />
-          Hard disk class supports basic read and write operations to specific
-          disk blocks, mimicking real disk interface
-        </>
-      ),
-    },
+
     {
       title: "Simple Risc-V Kernel",
       link: "https://github.com/matejabogdanovic/University/tree/main/Year2/Semester4/OS1/riscv-simple-kernel",
@@ -117,6 +210,112 @@ export const _projects: ProjectInfoType[][] = [
   [
     // start serbian
     {
+      title: "Asembler, Linker i Emulator",
+      link: "https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator",
+      language: "cpp",
+      difficulty: 4,
+      year: 2025,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          Projekat koji implementira <b>kompletan lanac alata</b>:
+          <li>
+            <b>Asembler:</b> Jednoprolazni asembler koji prevodi asembli kod u
+            tekstualne ili binarne objektne fajlove
+          </li>
+          <li>
+            <b>Linker:</b> Linker nezavisan od arhitekture. Kombinuje izlaze
+            asemblera, razrešava simbole i generiše relokabilne ili memorijske
+            inicijalizacione fajlove
+          </li>
+          <li>
+            <b>Emulator:</b> Interpretativni emulator koji izvršava programe iz
+            memorijskih fajlova, emulira CPU registre i pruža I/O operacije
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: "FAT fajl sistem implementiran unutar .txt fajla",
+      link: "https://github.com/matejabogdanovic/FAT-File-System-Simulation",
+      language: "cpp",
+      difficulty: 3.5,
+      year: 2025,
+      description: (
+        <>
+          Jednostavan FAT fajl sistem implementiran korišćenjem običnog
+          tekstualnog fajla, enkapsuliran u klasu koja simulira disk.
+          <br />
+          Klasa za hard disk podržava osnovne operacije čitanja i pisanja nad
+          određenim blokovima, oponašajući interfejs pravog diska.
+        </>
+      ),
+    },
+    {
+      title: "Aplikacija za rezervaciju vikendica",
+      link: "https://github.com/matejabogdanovic/PIA-MEAN-Mountain-Cottage",
+      language: "angular",
+      difficulty: 3.5,
+      year: 2025,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          Full-stack web aplikacija za{" "}
+          <b>rezervaciju i upravljanje vikendicama</b>, razvijena korišćenjem{" "}
+          <b>MEAN stack-a</b> i <b>Tailwind CSS-a</b> za moderan i responzivan
+          dizajn.
+          <li>
+            <b>Frontend (Angular + Tailwind):</b> Interaktivni korisnički
+            interfejs sa više uloga (turista, vlasnik, administrator)
+          </li>
+          <li>
+            <b>Backend (Node.js + Express):</b> REST API koji obrađuje
+            autentifikaciju, rezervacije i upravljanje podacima
+          </li>
+          <li>
+            <b>Baza podataka (MongoDB):</b> Efikasno čuva korisnike, vikendice i
+            podatke o rezervacijama
+          </li>
+          <li>
+            <b>Funkcionalnosti:</b> Dinamički paneli, vizualizacija statistike i
+            sistem rezervacija zasnovan na kalendaru
+          </li>
+        </ul>
+      ),
+    },
+
+    {
+      title: "Mini Hipervizor Projekat",
+      link: "https://github.com/matejabogdanovic/AOR2-KVM-Virtual-Machine",
+      language: "cpp",
+      difficulty: 3.5,
+      year: 2025,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          Projekat koji implementira jednostavan <b>hipervizor</b> korišćenjem
+          <b> KVM (Kernel-based Virtual Machine)</b> API-ja u C jeziku.
+          <li>
+            <b>Svrha:</b> Pokretanje virtuelnih mašina (VM) u 64-bitnom režimu
+            sa podešavanjem memorije i veličine stranica
+          </li>
+          <li>
+            <b>Verzija A:</b> Izvršavanje jedne VM instance sa serijskim I/O i
+            obradom <code>hlt</code> instrukcije
+          </li>
+          <li>
+            <b>Verzija B:</b> Istovremena podrška za više VM instanci
+            korišćenjem POSIX niti
+          </li>
+          <li>
+            <b>Verzija C:</b> I/O operacije gostujućih sistema preko I/O portova
+            (open, read, write, close)
+          </li>
+          <li>
+            <b>Fokus:</b> Upravljanje memorijom, virtualizacija i emulacija I/O
+            na nivou kernela
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: "Sistem za upravljanje medicinskim terminima",
       link: "https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System",
       language: "react",
@@ -139,22 +338,7 @@ export const _projects: ProjectInfoType[][] = [
         </ul>
       ),
     },
-    {
-      title: "FAT fajl sistem implementiran unutar .txt fajla",
-      link: "https://github.com/matejabogdanovic/FAT-File-System-Simulation",
-      language: "cpp",
-      difficulty: 3.5,
-      year: 2025,
-      description: (
-        <>
-          Jednostavan FAT fajl sistem implementiran korišćenjem običnog
-          tekstualnog fajla, enkapsuliran u klasu koja simulira disk.
-          <br />
-          Klasa za hard disk podržava osnovne operacije čitanja i pisanja nad
-          određenim blokovima, oponašajući interfejs pravog diska.
-        </>
-      ),
-    },
+
     {
       title: "Jednostavan RISC-V kernel",
       link: "https://github.com/matejabogdanovic/University/tree/main/Year2/Semester4/OS1/riscv-simple-kernel",

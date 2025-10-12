@@ -1,4 +1,4 @@
-import { SiReact, SiCplusplus } from "react-icons/si";
+import { SiReact, SiCplusplus, SiAngular } from "react-icons/si";
 import SelectLanguageButton from "./SelectLanguageButton";
 import { useEffect, useState } from "react";
 import { GrProjects } from "react-icons/gr";
@@ -33,6 +33,10 @@ export const icons: {
     language: "cpp",
     icon: <SiCplusplus />,
   },
+  {
+    language: "angular",
+    icon: <SiAngular />,
+  },
 ];
 
 const ProjectCardDisplay = () => {
@@ -55,7 +59,7 @@ const ProjectCardDisplay = () => {
   }, [selected, projects]);
   return (
     <>
-      <div className="grid grid-cols-4 xl:grid-cols-4  mb-4 gap-4 ">
+      <div className="grid grid-cols-2 xl:grid-cols-4  mb-4 gap-4 ">
         <SelectLanguageButton
           hoverStyle=" "
           selectedStyle=" text-accent "

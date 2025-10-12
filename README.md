@@ -1,14 +1,13 @@
 # 📜 About Me - 👉<a href="https://matejabogdanovic.github.io/matejabogdanovic/">Portfolio</a>
 
-I am a third-year student at the **University of Belgrade, School of Electrical Engineering**, specializing in **Computer Engineering and Informatics**. I've always been curious and passionate about solving problems. I am eager to take on new challenges, continuously learn, and grow in the ever-evolving world of technology.
+I am a fourth-year student at the **University of Belgrade, School of Electrical Engineering**, specializing in **Computer Engineering and Informatics**. I've always been curious and passionate about solving problems. I am eager to take on new challenges, continuously learn, and grow in the ever-evolving world of technology.
 
 📧 **Email:** bogdanovicmateja75@gmail.com  
 📍 **Location:** Belgrade, Serbia
 
-
 ## 🧑‍💻 Featured Projects
----
 
+---
 
 ### 🌐 **MEAN Stack - 👉 <a href="https://github.com/matejabogdanovic/PIA-MEAN-Mountain-Cottage">Cottage Booking App</a>**
 
@@ -19,7 +18,7 @@ A full-stack web application for **cottage reservation and management**, develop
 - **Backend (Node.js + Express):** REST API handling authentication, reservations, and data management
 - **Database (MongoDB):** Stores users, cottages, and reservation data efficiently
 - **Features:** Dynamic dashboards, statistics visualization, and calendar-based reservation system
-  
+
 ### 🌐 **React/TypeScript/Tailwind - 👉 <a href="https://github.com/matejabogdanovic/Spring-Boot-React-Health-Management-System">Medical Appointment Management System</a>**
 
 📅 **Year:** 2025\
@@ -31,13 +30,13 @@ A **React-based** web app for managing medical appointments with role-based dash
 
 ---
 
-### 💻 **C++ - 👉  <a href="https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator">Assembler, Linker & Emulator</a>**
+### 💻 **C++ - 👉 <a href="https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator">Assembler, Linker & Emulator</a>**
 
 📅 **Year:** 2025\
 A single project implementing a **complete toolchain**:
 
 - **Assembler:** Single-pass assembler converting assembly code into textual or binary object files
-- **Linker:** Target-independent linker combining multiple assembler outputs, resolving symbols, and generating relocatable or memory initialization files  
+- **Linker:** Target-independent linker combining multiple assembler outputs, resolving symbols, and generating relocatable or memory initialization files
 - **Emulator:** Interpretive emulator executing programs from memory initialization files, emulating CPU registers and terminal I/O until the `halt` instruction
 
 ### ⚙️ **C - 👉 <a href="https://github.com/matejabogdanovic/AOR2-KVM-Virtual-Machine">Mini Hypervisor Project</a>**
@@ -46,11 +45,10 @@ A single project implementing a **complete toolchain**:
 A low-level systems project implementing a simplified **hypervisor** using the **KVM (Kernel-based Virtual Machine)** API in C.
 
 - **Purpose:** Run guest virtual machines (VMs) in 64-bit long mode with configurable memory and page size
-- **Version A:** Single VM execution with serial I/O and `hlt` termination handling  
-- **Version B:** Concurrent multi-VM support using POSIX threads  
+- **Version A:** Single VM execution with serial I/O and `hlt` termination handling
+- **Version B:** Concurrent multi-VM support using POSIX threads
 - **Version C:** Guest file I/O operations via I/O ports (open, read, write, close)
 - **Focus:** Memory management, virtualization, and I/O emulation at kernel level
-
 
 ### 📂 **C++ - 👉 <a href="https://github.com/matejabogdanovic/FAT-File-System-Simulation">FAT File System Implemented on a .txt File</a>**
 
