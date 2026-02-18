@@ -30,6 +30,17 @@ A **React-based** web app for managing medical appointments with role-based dash
 
 ---
 
+### 🧠 **Java - 👉 <a href="https://github.com/matejabogdanovic/PP1-Compiler-For-MicroJava">Compiler for MicroJava</a>**
+
+📅 **Year:** 2026\
+Compiler translates a **high-level programming language inspired by Java and C syntax** into **MicroJava Virtual Machine bytecode**.
+
+- **Lexer:** Implemented using **JFLEX**
+- **Parser:** Built with **CUP (LALR parser generator)**
+- **Semantic Analysis:** Symbol table management, type checking, scope resolution
+- **Code Generation:** Produces executable bytecode for the MicroJava Virtual Machine
+- **Focus:** Compiler design principles, lexical and syntax analysis, abstract syntax trees (AST), and bytecode generation
+
 ### 💻 **C++ - 👉 <a href="https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator">Assembler, Linker & Emulator</a>**
 
 📅 **Year:** 2025\
