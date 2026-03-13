@@ -2,7 +2,12 @@ import { FaCalendar, FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import H3 from "../../components/h/H3";
 import { icons } from "./ProjectCardsDisplay";
 
-export type ProjectLanguageType = "cpp" | "react" | "java" | "angular";
+export type ProjectLanguageType =
+  | "cpp"
+  | "react"
+  | "java"
+  | "angular"
+  | "python";
 
 export type ProjectInfoType = {
   title: string;

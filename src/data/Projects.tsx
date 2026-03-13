@@ -4,6 +4,67 @@ export const _projects: ProjectInfoType[][] = [
   [
     // start english
     {
+      title: "Alphabet Neural Network",
+      link: "https://github.com/matejabogdanovic/Alphabet-Neural-Network",
+      language: "python",
+      difficulty: 3,
+      year: 2026,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          A <b>from-scratch neural network</b> built with <b>NumPy</b> for A-Z
+          handwritten letter recognition:
+          <li>
+            <b>Architecture:</b> Implemented <b>ReLU</b> and <b>Softmax</b>{" "}
+            activation functions
+          </li>
+          <li>
+            <b>Backpropagation:</b> Gradient descent optimization for weight and
+            bias updates
+          </li>
+          <li>
+            <b>Persistence:</b> Supports saving and loading trained model
+            weights in <b>.npz</b> format
+          </li>
+          <li>
+            <b>Focus:</b> Deep learning fundamentals, matrix calculus, and
+            building AI components without high-level frameworks
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: "Compiler for MicroJava",
+      link: "https://github.com/matejabogdanovic/PP1-Compiler-For-MicroJava",
+      language: "java",
+      difficulty: 4,
+      year: 2026,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          Compiler translates a{" "}
+          <b>high-level programming language inspired by Java and C syntax</b>{" "}
+          into <b>MicroJava Virtual Machine bytecode</b>:
+          <li>
+            <b>Lexer:</b> Implemented using <b>JFLEX</b>
+          </li>
+          <li>
+            <b>Parser:</b> Built with <b>CUP</b> (LALR parser generator)
+          </li>
+          <li>
+            <b>Semantic Analysis:</b> Symbol table management, type checking,
+            scope resolution
+          </li>
+          <li>
+            <b>Code Generation:</b> Produces executable bytecode for the
+            MicroJava Virtual Machine
+          </li>
+          <li>
+            <b>Focus:</b> Compiler design principles, lexical and syntax
+            analysis, abstract syntax trees (AST), and bytecode generation
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: "Assembler, Linker & Emulator",
       link: "https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator",
       language: "cpp",
@@ -209,6 +270,68 @@ export const _projects: ProjectInfoType[][] = [
   ], // end english
   [
     // start serbian
+    {
+      title: "Alfabet Neuronska Mreža",
+      link: "https://github.com/matejabogdanovic/Alphabet-Neural-Network",
+      language: "python",
+      difficulty: 3,
+      year: 2026,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          <b>Neuronska mreža implementirana od nule</b> koristeći <b>NumPy</b>{" "}
+          za prepoznavanje pisanih slova alfabeta (A-Z):
+          <li>
+            <b>Arhitektura:</b> Implementirane <b>ReLU</b> i <b>Softmax</b>{" "}
+            aktivacione funkcije
+          </li>
+          <li>
+            <b>Backpropagation:</b> Optimizacija gradijentnim spustom za
+            ažuriranje težina i bias-a
+          </li>
+          <li>
+            <b>Skladištenje:</b> Podrška za čuvanje i učitavanje istreniranih
+            modela u <b>.npz</b> formatu
+          </li>
+          <li>
+            <b>Fokus:</b> Osnove dubokog učenja, matrice i izrada AI komponenti
+            bez korišćenja gotovih biblioteka
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: "Kompajler za MicroJava",
+      link: "https://github.com/matejabogdanovic/PP1-Compiler-For-MicroJava",
+      language: "java",
+      difficulty: 4,
+      year: 2026,
+      description: (
+        <ul className="list-disc [&_li]:ml-4">
+          Kompajler prevodi{" "}
+          <b>programski jezik inspirisan Java i C sintaksom</b> u{" "}
+          <b>bytecode za MicroJava virtuelnu mašinu</b>:
+          <li>
+            <b>Lexer:</b> Implementiran pomoću <b>JFLEX</b>
+          </li>
+          <li>
+            <b>Parser:</b> Napravljen sa <b>CUP</b> (LALR parser generator)
+          </li>
+          <li>
+            <b>Semantička analiza:</b> Upravljanje tabelom simbola, provera
+            tipova, rešavanje opsega
+          </li>
+          <li>
+            <b>Generisanje koda:</b> Proizvodi izvršni bytecode za MicroJava
+            virtuelnu mašinu
+          </li>
+          <li>
+            <b>Fokus:</b> Principi dizajna kompajlera, leksička i sintaksna
+            analiza, apstraktna sintaksna stabla (AST) i generisanje bytecode-a
+          </li>
+        </ul>
+      ),
+    },
+
     {
       title: "Asembler, Linker i Emulator",
       link: "https://github.com/matejabogdanovic/SS-Assembler-Linker-Emulator",

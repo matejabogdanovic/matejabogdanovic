@@ -1,4 +1,4 @@
-import { SiReact, SiCplusplus, SiAngular } from "react-icons/si";
+import { SiReact, SiCplusplus, SiAngular, SiPython } from "react-icons/si";
 import SelectLanguageButton from "./SelectLanguageButton";
 import { useEffect, useState } from "react";
 import { GrProjects } from "react-icons/gr";
@@ -36,6 +36,10 @@ export const icons: {
   {
     language: "angular",
     icon: <SiAngular />,
+  },
+  {
+    language: "python",
+    icon: <SiPython />,
   },
 ];
 
@@ -97,13 +101,13 @@ const ProjectCardDisplay = () => {
         /> */}
         <ListingScrollGallery
           mapContainerStyle="flex flex-col gap-4 overflow-y-scroll custom-scrollbar h-[60vh] [&>*]:min-h-fit rounded-2xl "
-          data={data.sort((a, b) => b.difficulty - a.difficulty)}
+          data={data.sort((a, b) => b.year - a.year)}
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
         />
       </div>
       <div className="hidden xl:block ">
         <ListingGallery
-          data={data.sort((a, b) => b.difficulty - a.difficulty)}
+          data={data.sort((a, b) => b.year - a.year)}
           maxShowCnt={3}
           showStep={2}
           mapFunction={(p, index) => <ProjectCard data={p} key={index} />}
