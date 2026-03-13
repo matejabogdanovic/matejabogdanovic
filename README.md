@@ -9,6 +9,14 @@ I am a fourth-year student at the **University of Belgrade, School of Electrical
 
 ---
 
+### 🧠 **Python - 👉 <a href="https://github.com/matejabogdanovic/Alphabet-Neural-Network">Alphabet Neural Network</a>**
+
+📅 **Year:** 2026\
+A from-scratch **neural network** built with **NumPy** for A-Z handwritten letter recognition. 
+Features ReLU and Softmax activation functions and gradient descent.
+
+---
+
 ### 🌐 **MEAN Stack - 👉 <a href="https://github.com/matejabogdanovic/PIA-MEAN-Mountain-Cottage">Cottage Booking App</a>**
 
 📅 **Year:** 2025\
